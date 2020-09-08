@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <service id="SandBoxPlugin\Core\Content\SandBoxPlugin\SandBoxDefinition">
+            <tag name="shopware.entity.definition" entity="sand_box" />
+        </service>
+        <service id="SandBoxPlugin\Core\Api\DemoDataController" public="true">
+            <argument id="country.repository" type="service" />
+            <argument id="sand_box.repository" type="service" />
+            <call method="setContainer">
+                <argument type="service" id="service_container" />
+            </call>
+        </service>
+    </services>
+</container>
