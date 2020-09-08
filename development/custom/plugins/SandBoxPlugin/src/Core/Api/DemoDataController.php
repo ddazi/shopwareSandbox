@@ -38,7 +38,7 @@ class DemoDataController extends AbstractController
     }
 
     /**
-     * @Route("/api/v{version]/_action/sand_box_plugin/generate", name="api.custom.sand_box_plugin.generate", methods={"POST"})
+     * @Route("/api/v{version}/_action/sand_box_plugin/generate", name="api.custom.sand_box_plugin.generate", methods={"POST"})
      * @param Context $context
      * @return Response
      */

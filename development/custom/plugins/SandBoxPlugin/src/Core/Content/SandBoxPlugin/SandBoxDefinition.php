@@ -19,7 +19,7 @@ class SandBoxDefinition extends EntityDefinition
 
     public function getEntityName(): string
     {
-        return 'SandBoxPlugin';
+        return 'sandBox';
     }
 
     public function getCollectionClass(): string
@@ -46,7 +46,7 @@ class SandBoxDefinition extends EntityDefinition
                 new StringField('telephone', 'telephone'),
                 new LongTextField('open_times', 'openTimes'),
 
-                new FkField('country_id','country_id',CountryDefinition::class),
+                new FkField('country_id','countryId',CountryDefinition::class),
                 new ManyToOneAssociationField(
                     'country',
                     'country_id',

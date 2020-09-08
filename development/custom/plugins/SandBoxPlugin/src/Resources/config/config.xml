@@ -4,11 +4,11 @@
 
     <card>
         <title>Basic Sandbox Configuration</title>
-        <title lang="de_DE">Basis Sandbox Grundeinstellungen</title>
+        <title lang="de-DE">Basis Sandbox Grundeinstellungen</title>
         <input-field type="bool">
             <name>showInStoreFront</name>
             <label>Show in Storefront</label>
-            <label lang="de_DE">Zeige in Storefront</label>
+            <label lang="de-DE">Zeige in Storefront</label>
         </input-field>
     </card>
 </config>

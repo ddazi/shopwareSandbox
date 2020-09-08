@@ -1,0 +1,11 @@
+{% sw_extends '@Storefront/storefront/layout/footer/footer.html.twig' %}
+
+{% block layout_footer_navigation_columns %}
+    {{ parent() }}
+
+    {% if page.footer.extensions.SandBoxPlugin %}
+        {% sw_include '@Storefront/storefront/layout/footer/sandboxfooter.html.twig'  with {
+            'sandboxplugin': page.footer.extensions.SandBoxPlugin
+        }%}
+    {% endif %}
+{% endblock %}
